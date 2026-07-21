@@ -521,9 +521,9 @@ body::before{
   background-position: center;
 }
 /* REPLACE: put real photos in /assets and set background-image: url("assets/your-photo.jpg") */
-.ph-1::after{ content:"♠"; font-size: 54px; color: rgba(243,217,127,.5); }
-.ph-2::after{ content:"♥"; font-size: 54px; color: rgba(209,70,95,.6); }
-.ph-3::after{ content:"52"; font-family: var(--font-mono); font-size: 40px; color: rgba(243,217,127,.6); }
+.ph-1{ background-image: url("assets/foto1.jpg"); }
+.ph-2{ background-image: url("assets/foto2.jpg"); }
+.ph-3{ background-image: url("assets/foto3.jpg"); }
 .polaroid-photo{ display:flex; }
 .polaroid-photo::after{ display:block; }
 
