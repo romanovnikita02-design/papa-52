@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>52 — С днём рождения, папа!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="confetti-canvas"></canvas>
+
+<!-- corner brand mark -->
+<div class="corner-mark" aria-hidden="true">
+  <span class="corner-rank">52</span>
+  <span class="corner-suit">♠</span>
+</div>
+
+<nav class="site-nav">
+  <a href="#hero" class="nav-logo">P·52</a>
+  <div class="nav-links">
+    <a href="#wishes">Пожелания</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#games">Игры</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header id="hero" class="hero">
+  <div class="felt-vignette" aria-hidden="true"></div>
+  <div class="floating-suits" aria-hidden="true">
+    <span>♠</span><span>♥</span><span>♦</span><span>♣</span>
+    <span>♠</span><span>♥</span><span>♦</span><span>♣</span>
+  </div>
+
+  <div class="hero-content">
+    <p class="eyebrow">Особая раздача · один день в году</p>
+    <div class="hero-card">
+      <span class="hero-rank">52</span>
+      <span class="hero-suit">♠</span>
+    </div>
+    <h1 class="hero-title">С днём рождения,<br><span>папа!</span></h1>
+    <p class="hero-subtitle">
+      52 — это не просто цифра. Это полная колода: столько карт, сколько историй,
+      побед и тёплых вечеров ты подарил нашей семье. Сегодня разыгрываем твою руку.
+    </p>
+    <a href="#games" class="btn-gold">Сдавать карты →</a>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span></span>
+  </div>
+</header>
+
+<!-- ================= WISHES ================= -->
+<section id="wishes" class="section wishes-section reveal">
+  <p class="section-eyebrow">Масти пожеланий</p>
+  <h2 class="section-title">Четыре масти, одно сердце</h2>
+
+  <div class="wish-table reveal-stagger">
+    <!-- Each card flips on hover / tap to reveal the wish -->
+    <article class="wish-card stagger-child" tabindex="0">
+      <div class="wish-card-inner">
+        <div class="wish-face wish-front">
+          <span class="wish-suit red">♥</span>
+          <span class="wish-label">Черви</span>
+        </div>
+        <div class="wish-face wish-back">
+          <p>За твоё сердце — самое доброе и самое надёжное в любой шторм. Спасибо, что оно всегда за нас.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="wish-card stagger-child" tabindex="0">
+      <div class="wish-card-inner">
+        <div class="wish-face wish-front">
+          <span class="wish-suit black">♠</span>
+          <span class="wish-label">Пики</span>
+        </div>
+        <div class="wish-face wish-back">
+          <p>За твою силу и характер — за то, что не боишься трудностей и всегда идёшь первым, прокладывая путь.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="wish-card stagger-child" tabindex="0">
+      <div class="wish-card-inner">
+        <div class="wish-face wish-front">
+          <span class="wish-suit red">♦</span>
+          <span class="wish-label">Бубны</span>
+        </div>
+        <div class="wish-face wish-back">
+          <p>За блеск в твоих глазах, когда ты рассказываешь свои истории — пусть в жизни будет ещё больше поводов сиять.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="wish-card stagger-child" tabindex="0">
+      <div class="wish-card-inner">
+        <div class="wish-face wish-front">
+          <span class="wish-suit black">♣</span>
+          <span class="wish-label">Трефы</span>
+        </div>
+        <div class="wish-face wish-back">
+          <p>За крепкое здоровье и удачу — пусть везёт во всём, а мы всегда будем твоим лучшим козырем.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <p class="wish-note">Наведи курсор или коснись карты, чтобы открыть пожелание</p>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="section gallery-section reveal">
+  <p class="section-eyebrow">Козырные моменты</p>
+  <h2 class="section-title">52 карты — 52 воспоминания</h2>
+  
+
+  <div class="polaroid-row">
+    <!-- REPLACE: put real photos in /assets and change src below -->
+    <figure class="polaroid" style="--r:-6deg;">
+      <div class="polaroid-photo ph-1"></div>
+      <figcaption>Тогда</figcaption>
+    </figure>
+    <figure class="polaroid" style="--r:4deg;">
+      <div class="polaroid-photo ph-2"></div>
+      <figcaption>Сейчас</figcaption>
+    </figure>
+    <figure class="polaroid" style="--r:-3deg;">
+      <div class="polaroid-photo ph-3"></div>
+      <figcaption>Навсегда</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= GAMES ================= -->
+<section id="games" class="section games-section reveal">
+  <p class="section-eyebrow">Игровой стол</p>
+  <h2 class="section-title">Пять раздач в честь юбилея</h2>
+  <p class="games-note">Выбери игру — карты уже на столе.</p>
+
+  <div class="game-grid">
+    <button class="game-tile" data-target="game-blackjack">
+      <span class="game-suit">♠</span>
+      <span class="game-name">Блэкджек «Очко 52»</span>
+      <span class="game-desc">Набери 21 против стола</span>
+    </button>
+    <button class="game-tile" data-target="game-quiz">
+      <span class="game-suit">♥</span>
+      <span class="game-name">Насколько ты знаешь папу?</span>
+      <span class="game-desc">Викторина</span>
+    </button>
+    <button class="game-tile" data-target="game-poker">
+      <span class="game-suit">♦</span>
+      <span class="game-name">Покерная рука</span>
+      <span class="game-desc">Собери лучшую комбинацию</span>
+    </button>
+    <button class="game-tile" data-target="game-tictactoe">
+      <span class="game-suit">♣</span>
+      <span class="game-name">Крестики-нолики</span>
+      <span class="game-desc">Против стола</span>
+    </button>
+    <button class="game-tile" data-target="game-guess">
+      <span class="game-suit">♠</span>
+      <span class="game-name">Угадай счастливое число</span>
+      <span class="game-desc">От 1 до 52</span>
+    </button>
+  </div>
+
+  <!-- ---- Game 1: Blackjack ---- -->
+  <div class="game-panel" id="game-blackjack">
+    <div class="game-panel-head">
+      <h3>♠ Блэкджек «Очко 52»</h3>
+      <p>Наберите как можно ближе к 21, не превысив его. Стол играет по классическим правилам казино — берёт карты, пока не наберёт 17.</p>
+    </div>
+    <div class="bj-stats">
+      <span>Побед: <b id="bj-wins">0</b></span>
+      <span id="bj-status">Твой ход</span>
+      <button class="btn-outline" id="bj-deal">Новая раздача</button>
+    </div>
+    <div class="bj-table">
+      <div>
+        <p class="bj-hand-label">Стол <span id="bj-dealer-score"></span></p>
+        <div class="bj-hand" id="bj-dealer-hand"></div>
+      </div>
+      <div>
+        <p class="bj-hand-label">Ты <span id="bj-player-score"></span></p>
+        <div class="bj-hand" id="bj-player-hand"></div>
+      </div>
+    </div>
+    <div class="bj-controls">
+      <button class="btn-gold" id="bj-hit">Взять карту</button>
+      <button class="btn-outline" id="bj-stand">Хватит</button>
+    </div>
+    <p class="game-win" id="bj-result" hidden></p>
+  </div>
+
+  <!-- ---- Game 2: Quiz ---- -->
+  <div class="game-panel" id="game-quiz">
+    <div class="game-panel-head">
+      <h3>♥ Насколько ты знаешь папу?</h3>
+      <p>Отредактируй вопросы в <code>script.js</code>, чтобы викторина стала личной.</p>
+    </div>
+    <div class="quiz-box" id="quiz-box"></div>
+  </div>
+
+  <!-- ---- Game 3: Poker hand ---- -->
+  <div class="game-panel" id="game-poker">
+    <div class="game-panel-head">
+      <h3>♦ Покерная рука</h3>
+      <p>Тебе раздано 5 карт. Кликни на карты, которые хочешь оставить, а затем обменяй остальные — один раз — и узнай, какая комбинация выпала на удачу.</p>
+    </div>
+    <div class="poker-stats">
+      <span id="poker-status">Выбери карты для обмена</span>
+      <button class="btn-outline" id="poker-deal">Новая раздача</button>
+    </div>
+    <div class="poker-hand" id="poker-hand"></div>
+    <p class="poker-hint">Клик по карте — оставить (hold) её при обмене</p>
+    <button class="btn-gold" id="poker-swap">Обменять невыбранные</button>
+    <p class="game-win" id="poker-result" hidden></p>
+  </div>
+
+  <!-- ---- Game 4: Tic-tac-toe ---- -->
+  <div class="game-panel" id="game-tictactoe">
+    <div class="game-panel-head">
+      <h3>♣ Крестики-нолики</h3>
+      <p>Ты играешь ♥, стол отвечает ♠. Побеждай в честь дня рождения!</p>
+    </div>
+    <div class="ttt-stats">
+      <span id="ttt-status">Твой ход</span>
+      <button class="btn-outline" id="ttt-restart">Новая партия</button>
+    </div>
+    <div class="ttt-board" id="ttt-board"></div>
+  </div>
+
+  <!-- ---- Game 5: Guess number ---- -->
+  <div class="game-panel" id="game-guess">
+    <div class="game-panel-head">
+      <h3>♠ Угадай счастливое число</h3>
+      <p>Папе исполняется 52 — где-то между 1 и 52 спряталось его счастливое число.</p>
+    </div>
+    <div class="guess-box">
+      <input type="number" id="guess-input" min="1" max="52" placeholder="Число от 1 до 52">
+      <button class="btn-gold" id="guess-submit">Ходить</button>
+      <button class="btn-outline" id="guess-restart">Заново</button>
+    </div>
+    <p class="guess-hint" id="guess-hint">Осталось попыток: <b id="guess-attempts">7</b></p>
+    <div class="guess-history" id="guess-history"></div>
+  </div>
+
+</section>
+
+<footer class="site-footer">
+  <div class="footer-card-back" aria-hidden="true"></div>
+  <p>С любовью — твоя семья · 52 и ещё много-много раздач впереди 🥂</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
